@@ -2,12 +2,16 @@
   "name": "may-it-serve",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "serve.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node serve.js"
   },
   "dependencies": {
-    "serve": "13.0.2"
+    "@types/node": "17.0.25",
+    "serve": "13.0.2",
+    "minimist": "1.2.6",
+    "http-shutdown": "1.2.2"
   },
   "repository": {
     "type": "git",
