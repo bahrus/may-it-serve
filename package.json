@@ -8,8 +8,8 @@
     "serve": "node serve.js"
   },
   "dependencies": {
-    "@types/node": "18.8.3",
-    "serve": "14.0.1",
+    "@types/node": "18.11.9",
+    "serve": "14.1.1",
     "minimist": "1.2.7",
     "http-shutdown": "1.2.2"
   },
