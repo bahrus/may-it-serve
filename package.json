@@ -8,9 +8,9 @@
     "serve": "node serve.js"
   },
   "dependencies": {
-    "@types/node": "18.11.18",
-    "serve": "14.1.2",
-    "minimist": "1.2.7",
+    "@types/node": "18.14.6",
+    "serve": "14.2.0",
+    "minimist": "1.2.8",
     "http-shutdown": "1.2.2"
   },
   "repository": {
