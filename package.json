@@ -5,11 +5,13 @@
   "main": "serve.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node serve.js"
+    "serve": "node serve.js",
+    "safari": "npx playwright wk http://localhost:3030",
+    "update": "ncu -u && npm install"
   },
   "dependencies": {
-    "@types/node": "18.14.6",
-    "serve": "14.2.0",
+    "@types/node": "20.6.0",
+    "serve": "14.2.1",
     "minimist": "1.2.8",
     "http-shutdown": "1.2.2"
   },
