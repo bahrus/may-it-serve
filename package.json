@@ -10,7 +10,7 @@
     "update": "ncu -u && npm install"
   },
   "dependencies": {
-    "@types/node": "22.10.1",
+    "@types/node": "22.10.2",
     "serve": "14.2.4",
     "minimist": "1.2.8",
     "http-shutdown": "1.2.2"
