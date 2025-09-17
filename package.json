@@ -10,16 +10,13 @@
     "update": "ncu -u && npm install"
   },
   "dependencies": {
-    "@types/node": "22.10.2",
-    "serve": "14.2.4",
-    "minimist": "1.2.8",
-    "http-shutdown": "1.2.2"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bahrus/may-it-serve.git"
   },
-  "author": "",
+  "author": "Bruce B. Anderson <anderson.bruce.b@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bahrus/may-it-serve/issues"
