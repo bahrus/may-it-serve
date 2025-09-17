@@ -2,7 +2,9 @@
   "name": "may-it-serve",
   "version": "0.0.9",
   "description": "",
-  "main": "serve.js",
+  "type": "module",
+  "module": "simple_http_server.js",
+  "main": "simple_http_server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node serve.js",

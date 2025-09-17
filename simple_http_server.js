@@ -75,17 +75,19 @@ class SimpleHTTPRequestHandler {
     let match;
     while ((match = includeRegex.exec(html)) !== null) {
       const includePath = path.join(currentDir, match[1]);
-      tasks.push(
-        fs.readFile(includePath, "utf8")
-          .then(content => ({ placeholder: match[0], content }))
-          .catch(() => ({ placeholder: match[0], content: "" }))
-      );
+      const content = await fs.readFile(includePath, 'utf8');
+      html = html.replace(match[0], content);
+    //   tasks.push(
+    //     fs.readFile(includePath, "utf8")
+    //       .then(content => ({ placeholder: match[0], content }))
+    //       .catch(() => ({ placeholder: match[0], content: "" }))
+    //   );
     }
 
-    const results = await Promise.all(tasks);
-    for (const { placeholder, content } of results) {
-      html = html.replace(placeholder, content);
-    }
+    // const results = await Promise.all(tasks);
+    // for (const { placeholder, content } of results) {
+    //   html = html.replace(placeholder, content);
+    // }
     return html;
   }
 
