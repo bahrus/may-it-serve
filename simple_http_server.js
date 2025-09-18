@@ -21,6 +21,11 @@ class SimpleHTTPRequestHandler {
   }
 
   // Main request handler
+  /**
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
   async handleRequest(req, res) {
     try {
       const parsedUrl = url.parse(req.url);
