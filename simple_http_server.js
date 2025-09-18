@@ -24,7 +24,7 @@ class SimpleHTTPRequestHandler {
   /**
    * 
    * @param {Request} req 
-   * @param {Response} res 
+   * @param {http.ServerResponse} res 
    */
   async handleRequest(req, res) {
     try {
@@ -40,7 +40,7 @@ class SimpleHTTPRequestHandler {
       try {
         stat = await fs.stat(filepath);
         if (stat.isDirectory()) {
-          filepath = path.join(filepath, "index.html");
+          filepath = path.join(this.rootDir, '/index.html'); //path.join(filepath, "index.html");
           stat = await fs.stat(filepath);
         }
       } catch {
